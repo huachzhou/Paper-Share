@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Macro Graph Neural Networks for Online Billion-Scale Recommender Systems">
+  <title>Macro Graph Neural Networks - Paper Showcase</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #0056b3;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .authors, .links {
+      margin: 1rem 0;
+    }
+    .authors span {
+      display: inline-block;
+      margin: 0.5rem 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      color: #fff;
+      background: #0056b3;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #003d8a;
+    }
+    footer {
+      text-align: center;
+      margin: 2rem 0 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .code-block {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .image-container {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .image-container img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Macro Graph Neural Networks</h1>
+  <p>For Online Billion-Scale Recommender Systems</p>
+</header>
+
+<div class="container">
+  <section>
+    <h2>Abstract</h2>
+    <p>
+      Predicting Click-Through Rate (CTR) in billion-scale recommender systems poses a long-standing challenge for Graph Neural Networks (GNNs) due to the overwhelming computational complexity involved in aggregating billions of neighbors. This paper introduces Macro Graph Neural Networks (MacGNN), a revolutionary approach to CTR prediction designed for billion-scale recommendation systems.
+    </p>
+  </section>
+
+  <section class="authors">
+    <h2>Authors</h2>
+    <p>
+      Hao Chen (The Hong Kong Polytechnic University), Yuanchen Bei (Zhejiang University), Qijie Shen (Alibaba Group), Yue Xu (Alibaba Group), Sheng Zhou (Zhejiang University), Wenbing Huang (Renmin University of China), Feiran Huang (Jinan University), Senzhang Wang (Central South University), Xiao Huang (The Hong Kong Polytechnic University)
+    </p>
+  </section>
+
+  <section class="links">
+    <h2>Resources</h2>
+    <p>
+      <a href="https://arxiv.org/pdf/2401.14939v2.pdf" class="btn" target="_blank">Read Full Paper</a>
+      <a href="https://github.com/YuanchenBei/MacGNN" class="btn" target="_blank">GitHub Repository</a>
+    </p>
+  </section>
+
+  <section class="image-container">
+    <h2>Model Overview</h2>
+    <img src="https://via.placeholder.com/800x400" alt="Macro Graph Neural Network Diagram">
+  </section>
+
+  <section>
+    <h2>Key Contributions</h2>
+    <ul>
+      <li>Introduced a macro recommendation graph that reduces neighbor size from billions to hundreds.</li>
+      <li>Proposed a novel Macro Graph Neural Network (MacGNN) for efficient CTR prediction.</li>
+      <li>Validated the model with extensive offline experiments and real-world A/B testing on Taobao's homepage feed.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Code Snippet</h2>
+    <div class="code-block">
+      <pre><code>git clone https://github.com/YuanchenBei/MacGNN
+cd MacGNN
+python train.py --dataset Taobao --model MacGNN</code></pre>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>© 2024 Macro Graph Neural Networks. Designed for WWW '24.</p>
+</footer>
+
+</body>
+</html>
